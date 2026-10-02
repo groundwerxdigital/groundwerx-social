@@ -9,5 +9,5 @@ Owner = who ran it (Tyler or Cade). Check this and Metricool before planning so 
 | Mon Oct 5 | Money you're losing | search-results mock | "roofer near me" | images/2026-10-w1/p2_single_search.jpg | Tyler | scheduled 12:20pm |
 | Tue Oct 6 | Quick wins | numbered tip card | 5-minute Google profile check | images/2026-10-w1/p3_tipcard_gbp.jpg | Tyler | scheduled 4:40pm |
 | Wed Oct 7 | Behind GroundWerx | dark editorial | two brothers, no account managers | images/2026-10-w1/p4_single_brothers.jpg | Tyler | scheduled 10:50am |
-| Thu Oct 8 | Offers | text only | referral program | none | Tyler | scheduled 12:05pm |
+| Fri Oct 9 | Offers | text only | referral program | none | Tyler | scheduled 12:05pm (test copy posted Oct 1 9:35pm, to be removed) |
 
