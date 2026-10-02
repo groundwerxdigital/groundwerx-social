@@ -62,5 +62,7 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 
 ## Rules for Claude
 - Before planning: read this file and `calendar/log.md`, and check Metricool's scheduled posts.
-- Never schedule without explicit approval in chat from Tyler or Cade (e.g. "approved, schedule them"). Show every image and caption first. Once approved, schedule as live posts (not drafts); they don't use the Metricool app.
+- Weekly batch runs every Wednesday morning in VETO MODE: schedule next week's posts as live posts, then send Tyler a summary with every image and caption. He replies only to change or cancel. Cancel = set the post back to draft.
+- One-off or ad-hoc posts outside the weekly batch still need explicit approval in chat first.
+- Tyler and Cade don't use the Metricool app. Everything goes through Claude.
 - After scheduling: add a row to `calendar/log.md` with who made it.
