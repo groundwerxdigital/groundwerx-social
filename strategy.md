@@ -47,7 +47,8 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 6. **From Tyler / From Cade**: first-person posts in each brother's voice.
 
 ## Cadence and channels
-- 5 posts/week, Mon–Fri. (Metricool free plan = 20 posts/month.)
+- 5 posts/week, weekdays only (no weekends). Metricool free plan = 20 posts/month.
+- Stagger times between 10am and 5pm Central. Metricool's data shows weekday peaks around 10am, noon and 5pm.
 - Facebook Page now. Instagram and Google Business Profile when connected.
 - GBP gets a text update version of the week's best post.
 
@@ -61,5 +62,5 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 
 ## Rules for Claude
 - Before planning: read this file and `calendar/log.md`, and check Metricool's scheduled posts.
-- Never publish without approval from Tyler or Cade. Schedule as draft or wait for "approved."
+- Never schedule without explicit approval in chat from Tyler or Cade (e.g. "approved, schedule them"). Show every image and caption first. Once approved, schedule as live posts (not drafts); they don't use the Metricool app.
 - After scheduling: add a row to `calendar/log.md` with who made it.
