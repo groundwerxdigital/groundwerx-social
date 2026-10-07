@@ -63,17 +63,17 @@ def page(inner, theme="dark", right="", frame=True):
 POSTS = {}  # path -> html
 
 # ---------- Thu Oct 8: cream background, review timing tip ----------
-steps = [("thank them in person.", "right there, before you pack up."),
-         ("tell them why it matters.", "reviews help a small business like yours get found."),
-         ("text the link right then.", "while they're still standing in the driveway.")]
+steps = [("wrap up the job.", "thank them before you pack up."),
+         ("enter their name and number.", "one quick form. takes seconds."),
+         ("the review text goes out instantly.", "automatic. nothing else for you to do.")]
 sl = "".join(f"""<div style="display:flex;gap:30px;align-items:flex-start;padding:24px 0;border-top:1.5px solid rgba(11,11,11,.14)">
 <div class=h style="font-size:64px;color:#8a6f28;width:48px;line-height:1">{i}</div>
 <div><div style="font-weight:600;font-size:34px;color:var(--ink)">{a}</div>
 <div class=body style="font-size:27px;margin-top:4px">{b}</div></div></div>""" for i, (a, b) in enumerate(steps, 1))
-POSTS[W1 / "p5_cream_reviews.jpg"] = page(f"""<div class=kicker style="margin-top:20px">review tip</div>
+POSTS[W1 / "p5_cream_reviews_v2.jpg"] = page(f"""<div class=kicker style="margin-top:20px">review automation</div>
 <div class=h style="font-size:112px;margin-top:30px">ask for the review<br><em>before you pull<br>out of the driveway.</em></div>
 <div class=body style="margin-top:36px;max-width:820px;font-size:31px">the customer is happiest the minute the job's done. a week later, they've moved on.</div>
-<div style="margin-top:36px">{sl}</div>""", "cream", "save this")
+<div style="margin-top:36px">{sl}</div>""", "cream", "how it works")
 
 # ---------- Mon Oct 12: this vs that, website ----------
 left = ["big photo, number buried at the bottom", "slow to load on a phone", "&ldquo;contact us&rdquo; form only", "doesn't say where you work", "stock photos"]
@@ -106,7 +106,7 @@ POSTS[W2 / "p2_quote_tyler.jpg"] = page("""<div class=h style="font-size:330px;l
 N = 6
 myths = [
  ("&ldquo;word of mouth is all I need.&rdquo;", "even a referral googles you before they call. if your profile looks thin, they keep looking."),
- ("&ldquo;happy customers leave reviews on their own.&rdquo;", "a lot of them won't unless you ask. a quick text after the job goes a long way."),
+ ("&ldquo;happy customers leave reviews on their own.&rdquo;", "a lot of them won't unless they're asked. an automatic follow-up after every job gives you a much better shot."),
  ("&ldquo;my website's a few years old, but it's fine.&rdquo;", "open it on your phone. if you have to pinch and zoom to find your number, it's costing you calls."),
  ("&ldquo;marketing means a long contract.&rdquo;", "not with us. month-to-month. if it's not worth it to you, you leave."),
 ]
@@ -122,7 +122,7 @@ POSTS[W2 / "p3_myth_1.jpg"] = page(f"""<div class=kicker style="margin-top:130px
 <div class=rule style="background:#8a6f28"></div>
 <div class=body style="max-width:780px">heard every one of these on a call. here's the truth.</div>""", "cream", "<span style='color:#8a6f28'>swipe &rarr;</span>")
 for i, (m, f) in enumerate(myths, 2):
-    POSTS[W2 / f"p3_myth_{i}.jpg"] = mslide(i, m, f)
+    POSTS[W2 / (f"p3_myth_{i}_v2.jpg" if i == 3 else f"p3_myth_{i}.jpg")] = mslide(i, m, f)
 POSTS[W2 / "p3_myth_6.jpg"] = page("""<div class=kicker style="margin-top:120px">not sure where you stand?</div>
 <div class=h style="font-size:124px;margin-top:40px">15 minutes.<br><em>we'll show you<br>what we'd fix first.</em></div>
 <div class=rule style="background:#8a6f28"></div>
