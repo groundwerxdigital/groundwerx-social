@@ -142,11 +142,11 @@ Sorry we missed you. What's going on? We'll call you right back.</div>
 "dark", "example")
 
 # ---------- Fri Oct 16: solid gold, free consult ----------
-POSTS[W2 / "p5_gold_consult.jpg"] = page("""<div class=kicker style="margin-top:40px">free &middot; 15 minutes</div>
-<div class=h style="font-size:160px;margin-top:34px">what we'd<br><em>fix first.</em></div>
+POSTS[W2 / "p5_gold_consult_v2.jpg"] = page("""<div class=kicker style="margin-top:40px">free call &middot; 15 minutes</div>
+<div class=h style="font-size:150px;margin-top:34px">hop on a call.<br><em>keep the list.</em></div>
 <div class=rule></div>
-<div class=body style="max-width:840px">hop on a call with tyler and cade. we pull up <b>your google profile, your reviews and your website</b> with you.</div>
-<div class=body style="max-width:840px;margin-top:24px">you leave with a short list, whether you hire us or not.</div>
+<div class=body style="max-width:840px">tyler and cade go through <b>your google profile, your reviews and your website</b> with you and show you what could be working better.</div>
+<div class=body style="max-width:840px;margin-top:24px">have us handle it, or take the list and do it yourself. it's yours either way.</div>
 <div style="margin-top:44px;display:inline-block;background:var(--ink);padding:26px 40px">
 <div style="font-weight:700;font-size:44px;color:var(--gold2)">(952) 333-8122</div>
 <div style="font-size:28px;color:#CFC9BA;margin-top:8px;letter-spacing:.04em">groundwerxdigital.com</div></div>""",
