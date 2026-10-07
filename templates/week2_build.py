@@ -95,8 +95,8 @@ POSTS[W2 / "p1_thisvsthat_website.jpg"] = page(f"""<div class=kicker style="marg
 </div>""", "dark", "", frame=False)
 
 # ---------- Tue Oct 13: quote card, From Tyler ----------
-POSTS[W2 / "p2_quote_tyler.jpg"] = page("""<div class=h style="font-size:330px;line-height:.7;color:var(--gold);margin-top:70px">&ldquo;</div>
-<div class=h style="font-size:108px;margin-top:10px;line-height:1.02">you shouldn't need<br>a login to know if<br>your marketing<br><em>is working.</em></div>
+POSTS[W2 / "p2_quote_tyler_v2.jpg"] = page("""<div class=h style="font-size:330px;line-height:.7;color:var(--gold);margin-top:70px">&ldquo;</div>
+<div class=h style="font-size:108px;margin-top:10px;line-height:1.02">the best contractor<br>in town shouldn't be<br><em>the hardest one<br>to find.</em></div>
 <div class=rule style="margin-top:60px"></div>
 <div style="font-weight:600;font-size:32px;color:var(--paper)">Tyler Maas</div>
 <div style="font-size:24px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:10px;font-weight:600">co-founder, groundwerx digital</div>""",
