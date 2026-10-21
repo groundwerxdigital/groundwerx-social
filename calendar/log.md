@@ -21,3 +21,8 @@ Owner = who ran it (Tyler or Cade). Check this and Metricool before planning so 
 | Wed Oct 21 | Behind GroundWerx | giant-number stat | 0 dashboards, 0 homework, 0 long contracts, 1 straight report | images/2026-10-w3/p3_bignumber_zero.jpg | Tyler | scheduled 4:50pm (FB + IG) |
 | Thu Oct 22 | Quick wins | this vs. that, cream | one "services" page vs. a page for every service | images/2026-10-w3/p4_thisvsthat_service_pages.jpg | Tyler | scheduled 10:40am (FB + IG) |
 | Fri Oct 23 | From Tyler | quote card, solid gold | "you didn't get into the trades to do marketing at 9pm" | images/2026-10-w3/p5_quote_tyler_gold.jpg | Tyler | scheduled 11:50am (FB + IG) |
+| Mon Oct 26 | Money you're losing | dark editorial carousel (6) | the referral that googled you: word of mouth runs through search | images/2026-10-w4/p1_referral_search_1-6.jpg | Tyler | scheduled 10:25am (FB + IG) |
+| Tue Oct 27 | Quick wins | cream + phone mock (example profile) | set holiday hours before Thanksgiving | images/2026-10-w4/p2_phone_holiday_hours.jpg | Tyler | scheduled 12:15pm (FB + IG) |
+| Wed Oct 28 | Money you're losing | giant-number stat, solid gold | 3 phone numbers, one business: keep name/address/phone consistent (example numbers) | images/2026-10-w4/p3_bignumber_three_numbers.jpg | Tyler | scheduled 4:40pm (FB + IG) |
+| Thu Oct 29 | Quick wins | myth vs. fact single (dark/cream split) | job photos on your Google profile: what to shoot | images/2026-10-w4/p4_myth_job_photos.jpg | Tyler | scheduled 10:50am (FB + IG) |
+| Fri Oct 30 | From Tyler | text only | question: which marketing job would you hand off tomorrow? | none | Tyler | scheduled 12:35pm (FB only) |
