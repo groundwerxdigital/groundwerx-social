@@ -26,3 +26,7 @@ Owner = who ran it (Tyler or Cade). Check this and Metricool before planning so 
 | Wed Oct 28 | Money you're losing | giant-number stat, solid gold | 3 phone numbers, one business: keep name/address/phone consistent (example numbers) | images/2026-10-w4/p3_bignumber_three_numbers.jpg | Tyler | scheduled 4:40pm (FB + IG) |
 | Thu Oct 29 | Quick wins | myth vs. fact single (dark/cream split) | job photos on your Google profile: what to shoot | images/2026-10-w4/p4_myth_job_photos.jpg | Tyler | scheduled 10:50am (FB + IG) |
 | Fri Oct 30 | From Tyler | text only | question: which marketing job would you hand off tomorrow? | none | Tyler | scheduled 12:35pm (FB only) |
+| Tue Nov 3 | Money you're losing | cream + phone mock (text thread, example business) | on a roof when it rings: missed-call text-back mid-job | images/2026-11-w1/p1_phone_textback.jpg | Tyler | scheduled 12:10pm (FB + IG) |
+| Wed Nov 4 | Behind GroundWerx | dark numbered carousel (6) | a normal month with us: profile, reviews, missed calls, report | images/2026-11-w1/p2_month_1-6.jpg | Tyler | scheduled 10:30am (FB + IG) |
+| Thu Nov 5 | Quick wins | solid gold checklist | 2-minute test: call yourself from your own website on your phone | images/2026-11-w1/p3_gold_call_test.jpg | Tyler | scheduled 4:55pm (FB + IG) |
+| Fri Nov 6 | From Tyler | quote card, cream | "slow season is when you fix the marketing" | images/2026-11-w1/p4_quote_tyler_cream.jpg | Tyler | scheduled 11:20am (FB + IG) |
