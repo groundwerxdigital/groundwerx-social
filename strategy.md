@@ -44,7 +44,12 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 3. **Proof**: client results, before/after (only real, approved results).
 4. **Behind GroundWerx**: the brothers, how we work.
 5. **Offers**: free consult, referral program.
-6. **From Tyler / From Cade**: first-person posts in each brother's voice.
+6. **From Tyler / From Cade** (founder posts): first-person posts in one brother's voice.
+   - **About once a month.** At most one founder post per calendar month, and at least 4 weeks after the last one. Most weekly batches will have none.
+   - **Alternate Cade and Tyler. Never the same founder twice in a row.** Before planning, find the most recent founder post in `calendar/log.md` (pillar "From Tyler" or "From Cade") and use the other brother.
+   - The graphic names that founder (e.g. "Cade Maas, co-founder, GroundWerx Digital", corner tag "from cade"). The caption is in his voice, refers to the other brother by name ("that's what Tyler and I do"), and is signed "- Cade" or "- Tyler".
+   - Every other pillar is written as GroundWerx ("we"), with no personal sign-off, so it doesn't read as another founder post.
+   - Log the pillar as "From Tyler" or "From Cade" so the rotation can be tracked.
 
 ## Cadence and channels
 - 5 posts/week, weekdays only (no weekends). Metricool free plan = 20 posts/month.
