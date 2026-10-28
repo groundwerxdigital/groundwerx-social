@@ -1,3 +1,4 @@
+import sys
 """Render GroundWerx posts for the week of Nov 2-6, 2026 (Mon Nov 2 carousel was built in week3_build.py).
 Usage: python3 templates/week5_build.py
 Outputs 1080x1350 JPGs to images/2026-11-w1/.
@@ -152,11 +153,21 @@ POSTS[W5 / "p4_quote_tyler_cream.jpg"] = page("""<div class=h style="font-size:3
 <div style="font-size:24px;letter-spacing:.24em;text-transform:uppercase;color:#7d776a;margin-top:10px;font-weight:600">co-founder, groundwerx digital</div>""",
 "cream", "from tyler")
 
+# ---------- Fri Nov 6 (revised Oct 28 per Tyler): same quote card, from Cade ----------
+POSTS[W5 / "p4_quote_cade_cream.jpg"] = page("""<div class=h style="font-size:330px;line-height:.7;color:var(--gold);margin-top:140px;height:150px">&ldquo;</div>
+<div class=h style="font-size:100px;margin-top:10px;line-height:1.02">slow season is when<br>you fix the marketing.<br><em>so it's ready when<br>the phone picks<br>back up.</em></div>
+<div class=rule style="margin-top:56px"></div>
+<div style="font-weight:600;font-size:32px;color:var(--ink)">Cade Maas</div>
+<div style="font-size:24px;letter-spacing:.24em;text-transform:uppercase;color:#7d776a;margin-top:10px;font-weight:600">co-founder, groundwerx digital</div>""",
+"cream", "from cade")
+
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1080, "height": 1350})
+        only = sys.argv[1:]
         for out, html in POSTS.items():
+            if only and out.name not in only: continue
             f = TMP / (out.stem + ".html"); f.write_text(html)
             await pg.goto(f.as_uri()); await pg.evaluate("document.fonts.ready"); await pg.wait_for_timeout(250)
             png = TMP / (out.stem + ".png"); await pg.screenshot(path=str(png))

@@ -29,4 +29,4 @@ Owner = who ran it (Tyler or Cade). Check this and Metricool before planning so 
 | Tue Nov 3 | Money you're losing | cream + phone mock (text thread, example business) | on a roof when it rings: missed-call text-back mid-job | images/2026-11-w1/p1_phone_textback.jpg | Tyler | scheduled 12:10pm (FB + IG) |
 | Wed Nov 4 | Behind GroundWerx | dark numbered carousel (6) | a normal month with us: profile, reviews, missed calls, report | images/2026-11-w1/p2_month_1-6.jpg | Tyler | scheduled 10:30am (FB + IG) |
 | Thu Nov 5 | Quick wins | solid gold checklist | 2-minute test: call yourself from your own website on your phone | images/2026-11-w1/p3_gold_call_test.jpg | Tyler | scheduled 4:55pm (FB + IG) |
-| Fri Nov 6 | From Tyler | quote card, cream | "slow season is when you fix the marketing" | images/2026-11-w1/p4_quote_tyler_cream.jpg | Tyler | scheduled 11:20am (FB + IG) |
+| Fri Nov 6 | From Cade | quote card, cream | "slow season is when you fix the marketing" (switched from Tyler to Cade Oct 28 per Tyler) | images/2026-11-w1/p4_quote_cade_cream.jpg | Tyler | scheduled 11:20am (FB + IG) |
