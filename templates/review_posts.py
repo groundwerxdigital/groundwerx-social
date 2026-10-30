@@ -44,7 +44,7 @@ REVIEWS = {
              "communication has been great, and we’ve been really happy with both the work and the results. "
              "Highly recommend them to other business owners!"),
     "nerea": dict(name="Nerea", initial="N", color="#5E35B1", month="October 2026", theme="dark",
-        headline="another one<br><i>on Google.</i>", text=""),
+        headline="thank you,<br><i>Nerea.</i>", text=""),
 }
 
 THEMES = {  # background, headline color, accent, label color, logo variant, footer text color
