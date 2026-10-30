@@ -18,5 +18,8 @@ Cadence: new reviews go out ~1 week after they were left. Otherwise post the nex
 - **Nick Fox:** We’ve had a great experience working with Groundwerx Digital for Fox Heating & Air. Their communication has been great, and we’ve been really happy with both the work and the results. Highly recommend them to other business owners!
 - **Nerea:** (5 stars, no written text)
 
+## Rating badge numbers
+When you add a new review, also update RATING, AS_OF, REVIEW_COUNT and ALL_FIVE_STAR at the top of `templates/review_posts.py`. Current: 5.0, 4 reviews, all 5 stars, as of Oct 29, 2026. The count appears on posts only at 10+.
+
 ## Recording consent
 When a reviewer says yes, set Consent to `yes, <date>, <how> (text/email/reply)` and note if they OK'd their full name or a tag.

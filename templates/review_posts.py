@@ -31,6 +31,12 @@ ink.save(TMP / "logo_ink.png"); LOGO_INK = (TMP / "logo_ink.png").as_uri()
 # dropped automatically rather than showing a stale number.
 RATING = "5.0"
 AS_OF = "2026-10-29"
+# Total reviews on Google as of AS_OF. The count is only shown once we have 10 or more (Tyler, Oct 29).
+# ALL_FIVE_STAR must be True only if EVERY review is 5 stars; then the badge says "12 five-star reviews",
+# otherwise just "12 reviews" (a 5.0 average can hide a 4-star once there are many reviews).
+REVIEW_COUNT = 4
+ALL_FIVE_STAR = True
+SHOW_COUNT_FROM = 10
 
 # Real reviews from GroundWerx Digital's Google Business Profile (copied Oct 29, 2026).
 # text = exactly what we show (verbatim, or a verbatim excerpt with …). "" = star-only rating.
@@ -75,6 +81,9 @@ def badge():
     if (datetime.date.today() - as_of).days > 30:
         return '<div id=gl style="position:absolute;bottom:70px;right:80px;height:1px"></div>'  # stale: no badge
     when = as_of.strftime("%b %-d, %Y")
+    sub = f"as of {when}"
+    if REVIEW_COUNT >= SHOW_COUNT_FROM:
+        sub = f"{REVIEW_COUNT} {'five-star ' if ALL_FIVE_STAR else ''}reviews &middot; as of {when}"
     return f"""<div id=gl style="position:absolute;right:80px;bottom:60px;display:flex;align-items:center;gap:20px;
   background:#fff;border-radius:999px;padding:12px 34px 12px 14px;box-shadow:0 14px 34px rgba(0,0,0,.28)">
   <img src="{GLOGO}" style="height:56px;width:56px">
@@ -82,7 +91,7 @@ def badge():
   <div style="font:600 60px/1 Os;color:#202124;letter-spacing:.01em">{RATING}</div>
   <div style="display:flex;flex-direction:column;gap:4px">
     <div style="font:600 24px In;color:#202124">on Google</div>
-    <div style="font:400 17px In;color:#5f6368">as of {when}</div></div>
+    <div style="font:400 17px In;color:#5f6368">{sub}</div></div>
 </div>"""
 
 def review_post(r):
