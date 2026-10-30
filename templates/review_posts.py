@@ -7,12 +7,12 @@ Output: images/reviews/review_<key>.jpg at 1080x1350.
 Compliance built into this template (do not remove):
 - Review text is passed in exactly as written on Google. Only trim with an ellipsis (…), never reword or fix typos.
 - Official Google "G" logo (brand/third_party/google_g.png, unmodified, from gstatic) is shown at the same height as
-  our wordmark, and is kept away from the stars (stars live inside the card, the logo sits under it).
-- Copy says "on Google", never "Google rating" / "Google-rated". No overall rating or review count is shown
-  (that would need an "as of" date).
+  our wordmark, in the rating badge. No star icons in the badge (stars live only inside the review card).
+- Copy says "on Google", never "Google rating" / "Google-rated". The overall rating badge always carries an
+  "as of" date (RATING / AS_OF below) and disappears if AS_OF is over 30 days old.
 - Reviewer shown as initial avatar + first name and last initial. No profile photos.
 """
-import asyncio, pathlib, sys, html
+import asyncio, pathlib, sys, html, datetime
 from playwright.async_api import async_playwright
 from PIL import Image
 
@@ -25,6 +25,12 @@ GLOGO = (ROOT / "brand/third_party/google_g.png").as_uri()
 src = Image.open(ROOT / "brand/logo-wordmark.png").convert("L")
 ink = Image.new("RGBA", src.size, (11, 11, 11, 255)); ink.putalpha(src.point(lambda v: min(255, int(v * 1.6))))
 ink.save(TMP / "logo_ink.png"); LOGO_INK = (TMP / "logo_ink.png").as_uri()
+
+# Our overall rating ON GOOGLE, for the badge. Google requires an "as of" date with any overall rating.
+# Update both whenever a new review comes in. If AS_OF is more than 30 days old at render time, the badge is
+# dropped automatically rather than showing a stale number.
+RATING = "5.0"
+AS_OF = "2026-10-29"
 
 # Real reviews from GroundWerx Digital's Google Business Profile (copied Oct 29, 2026).
 # text = exactly what we show (verbatim, or a verbatim excerpt with …). "" = star-only rating.
@@ -57,10 +63,27 @@ STAR = '<svg viewBox="0 0 24 24" width="40" height="40"><path fill="#FBBC04" d="
 
 def font_css():
     ff = lambda fam, f, w, st="normal": f"@font-face{{font-family:{fam};font-weight:{w};font-style:{st};src:url({F}/{f})}}"
-    return "\n".join([ff("CG", "cormorant-garamond-latin-700-normal.woff2", 700),
+    return "\n".join([ff("CG", "cormorant-garamond-latin-700-normal.woff2", 700), ff("Os", "oswald-latin-600-normal.woff2", 600),
                       ff("CG", "cormorant-garamond-latin-700-italic.woff2", 700, "italic"),
                       ff("In", "inter-latin-400-normal.woff2", 400), ff("In", "inter-latin-500-normal.woff2", 500),
                       ff("In", "inter-latin-600-normal.woff2", 600), ff("In", "inter-latin-700-normal.woff2", 700)])
+
+def badge():
+    """Bottom-right pill: official Google G + big rating number + 'on Google' + as-of date.
+    No star icons here on purpose: Google's guidelines say never put stars next to the Google name or logo."""
+    as_of = datetime.date.fromisoformat(AS_OF)
+    if (datetime.date.today() - as_of).days > 30:
+        return '<div id=gl style="position:absolute;bottom:70px;right:80px;height:1px"></div>'  # stale: no badge
+    when = as_of.strftime("%b %-d, %Y")
+    return f"""<div id=gl style="position:absolute;right:80px;bottom:60px;display:flex;align-items:center;gap:20px;
+  background:#fff;border-radius:999px;padding:12px 34px 12px 14px;box-shadow:0 14px 34px rgba(0,0,0,.28)">
+  <img src="{GLOGO}" style="height:56px;width:56px">
+  <div style="width:2px;height:48px;background:#dadce0"></div>
+  <div style="font:600 60px/1 Os;color:#202124;letter-spacing:.01em">{RATING}</div>
+  <div style="display:flex;flex-direction:column;gap:4px">
+    <div style="font:600 24px In;color:#202124">on Google</div>
+    <div style="font:400 17px In;color:#5f6368">as of {when}</div></div>
+</div>"""
 
 def review_post(r):
     bg, hc, acc, lab, logo, foot = THEMES[r["theme"]]
@@ -77,7 +100,7 @@ def review_post(r):
     <div style="font:600 22px In;letter-spacing:.3em;color:{lab};text-transform:uppercase">from our google reviews</div>
     <div style="font:700 96px/0.98 CG;color:{hc};margin-top:22px">{r["headline"].replace("<i>", f'<i style="color:{acc}">')}</div>
   </div>
-  <div style="position:absolute;left:80px;right:80px;top:390px;bottom:250px;display:flex;align-items:center">
+  <div style="position:absolute;left:80px;right:80px;top:390px;bottom:200px;display:flex;align-items:center">
   <div id=card style="width:100%;background:#fff;border-radius:28px;
        padding:52px 56px 56px;box-shadow:0 30px 70px rgba(0,0,0,.35)">
     <div style="display:flex;align-items:center;gap:26px">
@@ -89,10 +112,7 @@ def review_post(r):
     </div>
     {body}
   </div></div>
-  <div id=gl style="position:absolute;left:80px;right:80px;bottom:170px;display:flex;align-items:center;gap:20px">
-    <img src="{GLOGO}" style="height:56px;width:56px;background:#fff;border-radius:50%;padding:6px">
-    <div style="font:500 28px In;color:{foot}">Review on Google, shared with permission</div>
-  </div>
+  {badge()}
   {lg}
 </div></body></html>"""
 
