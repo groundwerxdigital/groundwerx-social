@@ -77,6 +77,7 @@ The old posts all looked the same: thin border, small label, lowercase serif hea
   10. iPhone lock screen with notifications
   11. 3D iPhone with a Messages thread
   12. Laptop on a table showing a website
+  13. Google review card (only for real Google reviews; see "Google review posts" below; `templates/review_posts.py`)
 - The classic layouts (dark editorial, cream, solid gold, giant-number stat, myth vs. fact, this vs. that, quote card) are still allowed, but **use at most 1-2 classic layouts per week**. The rest come from the library above.
 - Never repeat a look within the same week, and never use the same look two posts in a row across weeks. Check `calendar/log.md`, and log the look's name in the Layout column.
 - You can invent new looks in the same spirit (a real-world object or a bold poster). Show Tyler new ones as mockups before scheduling them.
@@ -98,6 +99,35 @@ The old posts all looked the same: thin border, small label, lowercase serif hea
 - Checklists and tips should leave room for GroundWerx. Show the reader mostly done with one item left, and close with "that's where we come in" or a similar line, never "fix it this week" DIY homework that suggests they don't need us.
 - Every visual metaphor should make sense at a glance. A receipt, work order or flyer should hold content that belongs on that object.
 - Before scheduling, look at every render at full size and as a 360px thumbnail. Check for clipped headlines, text hidden behind devices, labels touching the logo, and devices covering the logo.
+
+## Google review posts (Tyler, Oct 29)
+Share our real Google reviews on Facebook (and Instagram when connected) as a graphic that clearly looks like a Google Business Profile review. Pillar: **Proof**. Look 13. Build with `templates/review_posts.py`; the queue is `calendar/reviews.md`.
+
+### Cadence
+- **New reviews:** post each one about **1 week after it was left** on Google.
+- **Backlog:** when no new review is waiting, post one older review **every 2-3 weeks** (oldest-first in the queue order).
+- **At most one review post per week.** It takes one of that week's 5 slots. Don't put two review posts in a row on the grid without another post between them.
+- Claude can't see the Google Business Profile from the weekly task. Every weekly summary asks Tyler: "Any new Google reviews this week?" Add new ones to `calendar/reviews.md` (copy the text from Google exactly).
+
+### Compliance (Google, Meta, FTC). Every review post must pass all of these.
+1. **Consent first (Google's rule).** Reviews belong to the reviewer. Google's brand guidelines say to get the reviewer's consent before using their review in marketing. Only post a review whose `Consent` column in `calendar/reviews.md` says **yes** (with the date and how it was given). No consent = skip it and move to the next one. Never assume consent because the review is public or because they're a happy client.
+2. **Verbatim only.** Copy the review text exactly as it appears on Google, typos included. You may shorten it with an ellipsis (…) only if the meaning doesn't change. Never reword, combine reviews, fix grammar, add words, or put words in the reviewer's mouth (FTC: no misrepresenting a reviewer's experience).
+3. **Real reviews only, real details only.** Never invent, embellish or "recreate" a review, reviewer, rating or date. Show the real star rating, and the month and year it was left.
+4. **Google logo, the official one, used correctly.** Google's guidelines require one of Google's logos when you show a Google review. Use only `brand/third_party/google_g.png` (official file from Google's servers, unmodified: don't recolor, stretch, crop or redraw it). Keep it the **same height as our wordmark** (56px). **Never put star icons next to the Google logo or the word "Google"**: the stars stay inside the review card, the logo sits below it. This is the only post type allowed to use a Google logo.
+5. **Wording.** Say "on Google" ("review on Google", "from our Google reviews"). Never say "Google rating", "Google-rated", "rated by Google" or anything implying Google endorses us. Don't show our overall star average or review count unless you add an "as of" date.
+6. **Honest overall picture (FTC).** Don't call one review "what everyone says" or imply it represents all reviews. Don't hide or bury negative reviews anywhere. If we ever get a negative review, it stays up on Google and gets a professional reply.
+7. **No incentives for reviews.** Never offer anything in exchange for a review, and never ask only happy customers. Review requests go to every customer (see the review automation rules). Never post reviews from family, friends or anyone working for GroundWerx. If someone with a connection to us leaves one, don't use it in marketing.
+8. **Reviewer privacy.** Show an initial avatar and **first name + last initial** (e.g. "Nick F."), unless the reviewer said full name is fine. Never use their profile photo. Name their business only if it's in the review text or they OK'd it. Don't tag them on Facebook unless they said it's fine.
+9. **Headline** is our line above the card. It must sum up what the review actually says, never overstate it ("changes made quickly", not "the fastest web team in Minnesota").
+10. **Caption:** thank the reviewer by first name, say they left it on Google, one line about what we did for them (only things that are true), then the usual soft CTA (free 15-minute consultation). Don't put phone numbers or links in the image. No "Google rating" phrasing in the caption either.
+11. Facebook/Meta: it's an organic Page post of our own real testimonials, so it's allowed. It's not allowed if it misleads (fake/edited reviews, implied endorsement by Google or Meta). Rules 2-5 cover this. If a review post is ever boosted as an ad, the same rules apply, plus Meta's ad standards.
+
+### Look
+- White review card (rounded corners, soft shadow) on one of our backgrounds: dark, cream or gold. Rotate the background so consecutive review posts don't match.
+- Inside the card: colored initial avatar, reviewer name, 5 yellow (#FBBC04) stars + month/year, review text in Inter, dark grey (#202124), like Google's own review card.
+- Below the card: official Google G + "Review on Google, shared with permission". Our wordmark bottom-left as always.
+- Gold label at the top ("from our google reviews") and a short serif headline drawn from the review.
+- The script refuses to render if the card overlaps the Google line. If it does, shorten the excerpt (with …), don't shrink the type further.
 
 ## Rules for Claude
 - Before planning: read this file and `calendar/log.md`, and check Metricool's scheduled posts.
