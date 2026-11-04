@@ -97,8 +97,8 @@ POSTS["p2_blueprint_6.jpg"] = page(GRID + f"""
 <span style="color:var(--gold2)">04</span>&nbsp; update it when your services change</div>
 <div style="position:absolute;left:80px;right:80px;top:810px;border:2.5px solid #D9BF72;background:rgba(217,191,114,.14);padding:34px 36px">
 <div class=mo style="font-size:20px;color:var(--gold);letter-spacing:.2em">NO TIME TO WRITE IT?</div>
-<div style="font:700 60px/1.05 CG;color:var(--paper);margin-top:14px">that's where we come in.</div>
-<div style="font:400 25px/1.5 In;color:#CFC9BA;margin-top:14px">we build out your google profile and keep it current, every week.</div></div>
+<div style="font:700 60px/1.05 CG;color:var(--paper);margin-top:14px">send us a message.<br><i style="color:var(--gold2)">we'll get it started for you.</i></div>
+<div style="font:400 25px/1.5 In;color:#CFC9BA;margin-top:16px">then we keep your whole google profile current, every week.</div></div>
 {tblock(6)}""", "#0d0d0b", "dark")
 
 # ---------- Wed Nov 11 · Offers · look 9 TEAR-OFF FLYER: referral program ----------
@@ -134,7 +134,7 @@ POSTS["p5_split_brothers.jpg"] = page("""
 <div style="position:absolute;left:0;right:0;top:0;height:675px;background:#D9BF72"></div>
 <div style="position:absolute;left:80px;top:170px"><div class=os style="font-size:176px;color:#0B0B0B;line-height:.88">no account<br>managers.</div></div>
 <div style="position:absolute;left:80px;top:765px"><div class=os style="font-size:176px;color:#D9BF72;line-height:.88">just two<br>brothers.</div>
-<div style="font:500 27px In;color:#CFC9BA;margin-top:44px;letter-spacing:.04em">tyler and cade &middot; every account, start to finish</div></div>
+<div style="font:500 27px In;color:#CFC9BA;margin-top:44px;letter-spacing:.04em">Tyler and Cade &middot; every account, start to finish</div></div>
 <div style="position:absolute;right:80px;top:84px;font:600 22px In;letter-spacing:.3em;color:#0B0B0B">WHO YOU WORK WITH</div>""",
 "#0B0B0B", "dark")
 

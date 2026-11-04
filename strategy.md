@@ -55,7 +55,7 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 - 5 posts/week, weekdays only (no weekends). Metricool free plan = 20 posts/month.
 - Stagger times between 10am and 5pm Central. Metricool's data shows weekday peaks around 10am, noon and 5pm.
 - Facebook Page now. Instagram and Google Business Profile when connected.
-- GBP gets a text update version of the week's best post.
+- GBP gets **2 text posts per week** drawn from that week's social posts. See "Google Business Profile posts" below.
 
 ## Design rules
 - Black (#0B0B0B), gold (#BA9941 / light #D9BF72), cream (#F2EEE4).
@@ -98,6 +98,7 @@ The old posts all looked the same: thin border, small label, lowercase serif hea
 - "Example" labels go only on specific made-up numbers, businesses or math. Don't stamp "example profile" on generic descriptions (Oct 28: removed from the caution-tape post).
 - Checklists and tips should leave room for GroundWerx. Show the reader mostly done with one item left, and close with "that's where we come in" or a similar line, never "fix it this week" DIY homework that suggests they don't need us.
 - Every visual metaphor should make sense at a glance. A receipt, work order or flyer should hold content that belongs on that object.
+- **Calls to action (Tyler, Nov 4): make the next step easy to do right there on social.** Lead with a message or comment action, e.g. "send us a message and we'll get it started for you" or "comment X and we'll send it over". The phone number and website can follow, but never as the only CTA. Graphics that end with a CTA use the message/comment line, not just "that's where we come in". Still no promises of rankings, results or timelines.
 - Before scheduling, look at every render at full size and as a 360px thumbnail. Check for clipped headlines, text hidden behind devices, labels touching the logo, and devices covering the logo.
 
 ## Google review posts (Tyler, Oct 29)
@@ -129,6 +130,17 @@ Share our real Google reviews on Facebook (and Instagram when connected) as a gr
 - Bottom row: our wordmark bottom-left as always. Bottom-right, a white pill badge with the official Google G, a divider, the big rating number (Oswald, e.g. "5.0"), then "on Google" with the "as of" date underneath. Graphic first, few words, no stars in the badge. (Tyler, Oct 29: he dropped the "shared with permission" line. Consent is still required, it just isn't printed.)
 - Gold label at the top ("from our google reviews") and a short serif headline drawn from the review.
 - The script refuses to render if the card overlaps the Google line. If it does, shorten the excerpt (with …), don't shrink the type further.
+
+## Google Business Profile posts (Tyler, Nov 4)
+- **2 per week**, each a rewrite of one of that week's Facebook/Instagram posts. Pick the two that suit someone looking at our profile on Google (tips about Google profiles, websites, how we work). Never a review post, never a founder post.
+- Metricool type **"publication"** (text update), scheduled on the same day as its social post, 15-30 minutes after it.
+- **Different rules from social (Google's post policy):**
+  - No phone numbers, links, URLs or email addresses in the text. Google rejects posts with phone numbers, and the profile already shows our call and website buttons.
+  - No hashtags, no emojis, no "swipe", "link in bio", "comment below" or "DM us". Google profiles have no comments, and Google's chat feature was shut down in 2024. The post must stand on its own with no image.
+  - CTA points to the profile's own buttons: "tap Call on our profile for a free 15-minute consultation" or "tap Website to see what we do".
+  - About 80-200 words, max 1,500 characters. No prices or promotions with prices. No example math unless clearly labeled.
+  - Stay on topic (our services). Same voice rules: plain, no promises of rankings, results or timelines.
+- Log GBP posts in the Status column of the social post they came from.
 
 ## Rules for Claude
 - Before planning: read this file and `calendar/log.md`, and check Metricool's scheduled posts.
