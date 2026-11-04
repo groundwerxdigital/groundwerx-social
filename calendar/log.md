@@ -30,3 +30,8 @@ Owner = who ran it (Tyler or Cade). Check this and Metricool before planning so 
 | Wed Nov 4 | Behind GroundWerx | dark numbered carousel (6) | a normal month with us: profile, reviews, missed calls, report | images/2026-11-w1/p2_month_1-6.jpg | Tyler | scheduled 10:30am (FB + IG) |
 | Thu Nov 5 | Quick wins | solid gold checklist | 2-minute test: call yourself from your own website on your phone | images/2026-11-w1/p3_gold_call_test.jpg | Tyler | scheduled 4:55pm (FB + IG) |
 | Fri Nov 6 | From Cade | quote card, cream | "slow season is when you fix the marketing" (switched from Tyler to Cade Oct 28 per Tyler) | images/2026-11-w1/p4_quote_cade_cream.jpg | Tyler | scheduled 11:20am (FB + IG) |
+| Mon Nov 9 | Money you're losing | receipt (look 3) | a year of not asking: 140 jobs, 12 asked, 9 reviews (example numbers), review automation | images/2026-11-w2/p1_receipt_reviews.jpg | Tyler | scheduled 10:20am (FB + IG) |
+| Tue Nov 10 | Quick wins | blueprint carousel (6) (look 5) | write your Google profile description in 4 lines (example business) | images/2026-11-w2/p2_blueprint_1-6.jpg | Tyler | scheduled 12:15pm (FB + IG) |
+| Wed Nov 11 | Offers | tear-off flyer (look 9) | referral program: $100 cash, their first month free | images/2026-11-w2/p3_flyer_referral.jpg | Tyler | scheduled 4:45pm (FB + IG) |
+| Thu Nov 12 | Quick wins | caution tape (look 1) | does your website look old? (© 2019 footer, stale banner, old truck photos) | images/2026-11-w2/p4_caution_website.jpg | Tyler | scheduled 11:40am (FB + IG) |
+| Fri Nov 13 | Behind GroundWerx | split poster (look 6) | no account managers, just two brothers | images/2026-11-w2/p5_split_brothers.jpg | Tyler | scheduled 10:55am (FB + IG); GBP text version scheduled 11:10am |
