@@ -75,39 +75,39 @@ box-shadow:0 30px 60px rgba(0,0,0,.35),0 2px 0 #ddd3bb">
 sig = lambda label: f"""<div style="text-align:right;margin-top:30px"><div style="font:700 56px Hw;color:#a5812c;transform:rotate(-4deg)">Tyler &amp; Cade</div>
 <div class=mo style="font-size:18px;color:#6b6352;border-top:1.5px solid #0B0B0B;padding-top:6px;width:300px;margin-left:auto">{label}</div></div>"""
 F_BASE = [("CUSTOMER", "YOUR BUSINESS"), ("JOB", "NEW WEBSITE")]
-POSTS["p3_workorder_1.jpg"] = work_order("No. 0018", F_BASE + [("CREW", "TYLER &amp; CADE")], f"""
+POSTS["p3_workorder_1_v2.jpg"] = work_order("No. 0018", F_BASE + [("CREW", "TYLER &amp; CADE")], f"""
 <div class=os style="font-size:112px;color:#0B0B0B;margin-top:26px;line-height:.9">how we<br>build your<br><span style="color:#a5812c">website.</span></div>
-<div class=mo style="font-size:26px;color:#2b2820;line-height:1.55;margin-top:30px">3 steps. one point of contact.<br>no handoffs to someone you've never met.</div>""",
+<div class=mo style="font-size:26px;color:#2b2820;line-height:1.55;margin-top:30px">3 steps. one point of contact.<br>and no blank-page questionnaire.</div>""",
 """<div class=mo style="font-size:24px;color:#a5812c;margin-top:40px;font-weight:700">SWIPE FOR THE JOB SHEET &rarr;</div>""")
-steps = [
- ("STEP 1 OF 3", "THE 15-MINUTE CALL", ["what you do, and what you want more of", "the towns you actually cover", "the photos you already have", "what your customers ask on every call"],
-  "you talk. we take the notes."),
- ("STEP 2 OF 3", "WE BUILD IT", ["a page for every service you offer", "a call button at the top of every page", "fast and easy to use on a phone", "your real job photos, not stock"],
-  "you run jobs. we do the building."),
+steps = [  # revised Nov 12 per Tyler: step 1 is a mock-up built from what's already online, then a call to finalize
+ ("STEP 1 OF 3", "WE BUILD A MOCK-UP", ["you sign up. no forms to fill out", "we pull what's online about you", "google profile, reviews, photos", "we build a mock-up of your site"],
+  "you don't start from a blank page."),
+ ("STEP 2 OF 3", "WE WALK THROUGH IT TOGETHER", ["a call to walk through the mock-up", "fix anything we got wrong", "add anything we missed", "you sign off before it goes live"],
+  "nothing goes live until you've seen it."),
  ("STEP 3 OF 3", "LAUNCH, THEN KEEP IT CURRENT", ["linked from your google profile", "new service or photo? text it to us", "we make the change for you", "month-to-month. no long contract"],
   "you don't log in to anything."),
 ]
 for i, (st, job, items, note) in enumerate(steps):
-    POSTS[f"p3_workorder_{i+2}.jpg"] = work_order(f"{st}", F_BASE + [("TASK", job)],
+    POSTS[f"p3_workorder_{i+2}_v2.jpg"] = work_order(f"{st}", F_BASE + [("TASK", job)],
         "".join(check(t) for t in items),
         f"""<div class=mo style="font-size:27px;color:#2b2820;margin-top:40px;font-weight:700">{note}</div>{sig("DONE BY")}""",
         rot=[1.4, -1.2, 1.6][i])
-POSTS["p3_workorder_5.jpg"] = work_order("No. 0018", F_BASE + [("STATUS", "READY WHEN YOU ARE")], f"""
+POSTS["p3_workorder_5_v2.jpg"] = work_order("No. 0018", F_BASE + [("STATUS", "READY WHEN YOU ARE")], f"""
 <div class=os style="font-size:104px;color:#0B0B0B;margin-top:26px;line-height:.9">need a<br>new website?</div>
 <div style="font:700 54px/1.08 CG;color:#0B0B0B;margin-top:30px">send us a message.<br><i style="color:#8a6f28">we'll get it started for you.</i></div>
-<div class=mo style="font-size:24px;color:#2b2820;line-height:1.55;margin-top:26px">or book a free 15-minute call<br>with the brothers.</div>""",
+<div class=mo style="font-size:24px;color:#2b2820;line-height:1.55;margin-top:26px">we start with what's already<br>online about you.</div>""",
 sig("SIGNED"), rot=-1.4)
 
-# ---------- Thu Nov 19 · Offers · look 7 BIG CHAT BUBBLES: what happens on the free 15-minute call ----------
-POSTS["p4_bubbles_consult.jpg"] = page(f"""
-<div style="position:absolute;left:70px;top:90px;font:600 22px In;letter-spacing:.3em;color:var(--gold)">THE FREE 15-MINUTE CALL</div>
+# ---------- Thu Nov 19 · Offers · look 7 BIG CHAT BUBBLES: we look you up first (revised Nov 12 per Tyler: no 15-minute-call pitch) ----------
+POSTS["p4_bubbles_lookup.jpg"] = page(f"""
+<div style="position:absolute;left:70px;top:90px;font:600 22px In;letter-spacing:.3em;color:var(--gold)">BEFORE WE EVER TALK</div>
 <div style="position:absolute;left:0;right:0;top:150px;text-align:center;font:500 20px In;color:#8d8676">questions we get a lot</div>
-{L.bub("So what actually happens on the free call?", False, 200)}
-{L.bub("15 minutes. We look at your Google profile, reviews and website with you.", True, 360, "Tyler &amp; Cade")}
-{L.bub("Do I have to sign anything?", False, 590)}
-{L.bub("Nope. You leave with a short list of what we'd fix first. Keep it, with us or without us.", True, 740)}
-<div style="position:absolute;left:70px;right:70px;top:990px"><div style="font:700 70px/1 CG;color:var(--paper)">15 minutes.<br><i style="color:var(--gold2)">no strings.</i></div></div>""",
-"#141310", "dark", "free call")
+{L.bub("So what happens if I reach out?", False, 200)}
+{L.bub("We look you up first. Your Google profile, reviews, website and social pages.", True, 340, "Tyler &amp; Cade")}
+{L.bub("Then a sales pitch?", False, 590)}
+{L.bub("Nope. The few fixes we think would move the needle most for you. Keep the list, with us or without us.", True, 740)}
+<div style="position:absolute;left:70px;right:70px;top:990px"><div style="font:700 70px/1 CG;color:var(--paper)">we do our homework<br><i style="color:var(--gold2)">before we call.</i></div></div>""",
+"#141310", "dark", "free look")
 
 # ---------- Fri Nov 20 · Quick wins · classic THIS VS. THAT: reply to the 5-star reviews too ----------
 star = '<span style="color:#FBBC04">&#9733;&#9733;&#9733;&#9733;&#9733;</span>'

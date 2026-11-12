@@ -19,9 +19,11 @@ Tyler's Claude and Cade's Claude both follow it. Change the strategy here, not i
 2. **Review automation**: every finished job triggers a review request.
 3. **Missed-call text-back**: if they can't pick up, the caller gets a text within a minute.
 4. **Website builds**: fast, mobile-first, built to book calls.
+   - **How a build works (Tyler, Nov 12):** after they sign up, we pull everything already online about them (Google profile, reviews, photos, old site) and build a mock-up. Then we get on a call to walk through it, fix anything we got wrong or missed, and they sign off before it goes live. It does NOT start with a discovery call or a questionnaire.
 
 ## Offers
-- **Free 15-minute consultation** with the brothers. (It's 15 minutes. Not 20.)
+- **Free online presence review (Tyler, Nov 12): this is the main offer now.** We look up their Google profile, reviews, website and social pages, then come back to them with the few fixes we think would move the needle most. It's not a sales pitch; the list is theirs to keep, with us or without us. CTA example: "send us a message with your business name and we'll take a look." Never promise what the fixes will do.
+- **Free 15-minute consultation:** it still exists, but we rarely do it. Don't build posts around it and don't put it in every caption's sign-off. A plain "Tyler and Cade · (952) 333-8122 · groundwerxdigital.com" line is fine. (If it's ever mentioned, it's 15 minutes, not 20.)
 - **Referral program**: refer a business, get $100 cash; they get their first month free; existing clients can take a free month instead; unlimited referrals. Link: groundwerxdigital.com/referral
 - **Do not post package prices.** Packages are being reworked. Ignore the old FAQ tiers.
 
@@ -121,7 +123,7 @@ Share our real Google reviews on Facebook (and Instagram when connected) as a gr
 7. **No incentives for reviews.** Never offer anything in exchange for a review, and never ask only happy customers. Review requests go to every customer (see the review automation rules). Never post reviews from family, friends or anyone working for GroundWerx. If someone with a connection to us leaves one, don't use it in marketing.
 8. **Reviewer privacy.** Show an initial avatar and **first name + last initial** (e.g. "Nick F."), unless the reviewer said full name is fine. Never use their profile photo. Name their business only if it's in the review text or they OK'd it. Don't tag them on Facebook unless they said it's fine.
 9. **Headline** is our line above the card. It must sum up what the review actually says, never overstate it ("changes made quickly", not "the fastest web team in Minnesota").
-10. **Caption:** thank the reviewer by first name, say they left it on Google, one line about what we did for them (only things that are true), then the usual soft CTA (free 15-minute consultation). Don't put phone numbers or links in the image. No "Google rating" phrasing in the caption either.
+10. **Caption:** thank the reviewer by first name, say they left it on Google, one line about what we did for them (only things that are true), then the usual soft CTA (send us a message; we'll look over their online presence). Don't put phone numbers or links in the image. No "Google rating" phrasing in the caption either.
 11. Facebook/Meta: it's an organic Page post of our own real testimonials, so it's allowed. It's not allowed if it misleads (fake/edited reviews, implied endorsement by Google or Meta). Rules 2-5 cover this. If a review post is ever boosted as an ad, the same rules apply, plus Meta's ad standards.
 
 ### Look
@@ -137,7 +139,7 @@ Share our real Google reviews on Facebook (and Instagram when connected) as a gr
 - **Different rules from social (Google's post policy):**
   - No phone numbers, links, URLs or email addresses in the text. Google rejects posts with phone numbers, and the profile already shows our call and website buttons.
   - No hashtags, no emojis, no "swipe", "link in bio", "comment below" or "DM us". Google profiles have no comments, and Google's chat feature was shut down in 2024. The post must stand on its own with no image.
-  - CTA points to the profile's own buttons: "tap Call on our profile for a free 15-minute consultation" or "tap Website to see what we do".
+  - CTA points to the profile's own buttons: "tap Call on our profile to talk with Tyler and Cade" or "tap Website to see what we do". Don't pitch the free 15-minute call here either.
   - About 80-200 words, max 1,500 characters. No prices or promotions with prices. No example math unless clearly labeled.
   - Stay on topic (our services). Same voice rules: plain, no promises of rankings, results or timelines.
 - Log GBP posts in the Status column of the social post they came from.
